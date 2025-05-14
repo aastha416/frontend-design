@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="circle.ico">
+    <title>desigin</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Todhri&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(55, 56, 59);
+      }
+      .header {
+        display: flex;
+        height: 210px;
+        justify-content: space-between;
+        align-items: center;
+
+      }
+      .navbar a {
+        text-decoration: none;
+        margin: 10px;
+        color: white;
+        transition: 0.3s ease-in;
+      }
+      .navbar {
+        display: flex;
+        position: absolute;
+        top: 35px;
+        right: 30px;
+      }
+      .header h1 {
+        color: rgb(232, 219, 219);
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        font-size: 60px;
+        font-family: initial;
+        user-select: none;
+      }
+      .navbar a:hover {
+        background-color: rgb(77, 71, 71);
+        padding: 6px;
+        border-radius: 10px;
+        box-shadow: 0 0px 8px rgba(255, 255, 255, 0.5);
+      }
+      .logo {
+        display: flex;
+      }
+      .logoaj {
+        height: 400px;
+        width: 400px;
+        display: flex;
+        position: relative;
+        left: 70%;
+        top: 30px;
+        border-radius: 30%;
+        transition: 0.5s linear;
+        animation: logoaj 2s infinite ;
+      }
+      @keyframes logoaj{
+        0% {
+          box-shadow: 0 0px 0px rgba(255, 255, 255, 0.7);
+        }
+        100% {
+          box-shadow: 0 0px 100px rgba(255, 255, 255, 0.7);
+        }
+      }
+      .header h1:hover {
+        box-shadow: 0 4px 8px;
+      }
+      .para pre {
+        display: flex;
+        position: absolute;
+        top: 350px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .social-media {
+        text-decoration: none;
+        position: absolute;
+        left: 60px;
+        top: 550px;
+        color: white;
+        font-size: 30px;
+      }
+      .social-media a {
+        color: white;
+        padding: 20px;
+      }
+      .para p {
+        font-size: 85px;
+        color: white;
+        position: absolute;
+        top: 200px;
+        left: 70px;
+      }
+      span {
+        color: rgb(81, 18, 18);
+        font-family: "Noto Serif Todhri", serif;
+        font-weight: bolder;
+        font-style: normal;
+      }
+      .div1 {
+        background-color: white;
+        height: 500px;
+        width: 350px;
+        border-radius: 10px;
+        background-color: rgb(114, 91, 91);
+      }
+      .parent {
+        position: relative;
+        top: 270px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 25px;
+        margin-left: 100px;
+        column-gap: 50px;
+        overflow: hidden;
+      }
+      .footer{
+      display: flex;
+      background-color: #370303;
+      height: 300px;
+      margin-top: 400px;
+    }
+    .box{
+      width: 300px;
+      height: 200px;
+      color: white;
+      padding: 10px;
+      margin: 50px;
+      position: relative;
+      left: 100px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .he{
+      font-size: 30px;
+      position: absolute;
+      top: -20px;
+      left: 20px;
+      font-size: 20px;
+      font-family: monospace;
+      color: rgb(91, 91, 139);
+      animation: he 1s infinite;
+    }
+    .box a{
+      display: block;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     
+    }
+    @keyframes he{
+      0% {
+        transform:scale(1);
+      }
+      100% {
+        transform:scale(1.5);
+      }
+    }
+    .box a:hover{
+        color: rgb(219, 214, 90);
+    }
+      .photo1 {
+        display: flex;
+        height: 280px;
+        width: 350px;
+        position: relative;
+        left: -10px;
+        overflow: hidden;
+        animation: photo 1s linear;
+      }
+      .photo2 {
+        display: flex;
+        height: 280px;
+        width: 350px;
+        position: relative;
+        left: -20px;
+        top: 20px;
+        overflow: hidden;
+        animation: photo 1s linear;
+      }
+      .photo3 {
+        display: flex;
+        height: 280px;
+        width: 350px;
+        position: relative;
+        overflow: hidden;
+        animation: photo 1s linear;
+      }
+      @keyframes photo{
+        from{
+          transform: rotate(0deg) ;
+        }
+        to{
+          transform: rotate(360deg);
+        }
+      }
+      .des {
+        margin-top: 10px;
+        margin-left: 10px;
+        color: white;
+      }
+      .p-des {
+        margin: 12px;
+        text-align: justify;
+        color: white;
+        font-weight: bold;
+      }
+      .btn,.btn1 {
+        width: 100px;
+        margin-left: 50px;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        background-color: rgb(82, 41, 41);
+        font-size: 10px;
+        font-weight: bolder;
+        animation: btn 1s infinite ;
+      }
+      @keyframes btn{
+        from {
+            transform: scale(1);
+          }
+          to {
+            transform: scale(1.5);
+          }
+      }
+      .btn:hover {
+        background-color: grey;
+        color: black;
+      }
+      .btn1:hover {
+        background-color: grey;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="design.html"><h1>ASTRAWOMEN Designing</h1></a>
+        <nav class="navbar">
+          <a href="design.html" target="_blank">Home</a>
+          <a href="contact.html" target="_blank">Contact</a>
+          <a href="about.html" target="_blank">About</a>
+        </nav>
+      </header>
+    </div>
+    <div class="logo">
+      <img src="Astrawomen_logo_400x400.png"alt=""class="logoaj"/>
+    </div>
+    <div class="para">
+      <p><span>ASTRAWOMEN</span> Designing</p>
+      <pre>
+          A designer is a professional responsible for crafting the visual
+          aesthetics and user experience. 
+          Their role encompasses  various aspects, including layout design,
+          color schemes, typography, and imagery
+        </pre
+      >
+    </div>
+    <div class="social-media">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-telegram"></i></a>
+    </div>
+    <div class="parent">
+      <div class="div1">
+        <img src="web page.png" alt="" class="photo1" />
+        <h1 class="des">Discrption</h1>
+        <p class="p-des">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          quisquam ea voluptatum doloribus, perferendis rem tempore accusamus
+          voluptatem in iusto amet, architecto minus pariatur odit error illo
+          sunt magnam!
+        </p>
+        <button type="button" class="btn">Add to cart</button>
+        <button type="button" class="btn1">Buy now</button>
+      </div>
+      <div class="div1">
+        <img src="card.png" alt="" class="photo2" />
+        <h1 class="des">Discrption</h1>
+        <p class="p-des">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          quisquam ea voluptatum doloribus, perferendis rem tempore accusamus
+          voluptatem in iusto amet, architecto minus pariatur odit error illo
+          sunt magnam!
+        </p>
+        <button type="button" class="btn">Add to cart</button>
+        <button type="button" class="btn1">Buy now</button>
+      </div>
+      <div class="div1">
+        <img src="dslr.png" alt="" class="photo3" />
+        <h1 class="des">Discrption</h1>
+        <p class="p-des">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          quisquam ea voluptatum doloribus, perferendis rem tempore accusamus
+          voluptatem in iusto amet, architecto minus pariatur odit error illo
+          sunt magnam!
+        </p>
+        <button type="button" class="btn">Add to cart</button>
+        <button type="button" class="btn1">Buy now</button>
+      </div>
+      <div class="div1">
+        <img src="web page.png" alt="" class="photo1" />
+        <h1 class="des">Discrption</h1>
+        <p class="p-des">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          quisquam ea voluptatum doloribus, perferendis rem tempore accusamus
+          voluptatem in iusto amet, architecto minus pariatur odit error illo
+          sunt magnam!
+        </p>
+        <button type="button" class="btn">Add to cart</button>
+        <button type="button" class="btn1">Buy now</button>
+      </div>
+      <div class="div1">
+        <img src="card.png" alt="" class="photo2" />
+        <h1 class="des">Discrption</h1>
+        <p class="p-des">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          quisquam ea voluptatum doloribus, perferendis rem tempore accusamus
+          voluptatem in iusto amet, architecto minus pariatur odit error illo
+          sunt magnam!
+        </p>
+        <button type="button" class="btn">Add to cart</button>
+        <button type="button" class="btn1">Buy now</button>
+      </div>
+      <div class="div1">
+        <img src="dslr.png" alt="" class="photo3" />
+        <h1 class="des">Discrption</h1>
+        <p class="p-des">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          quisquam ea voluptatum doloribus, perferendis rem tempore accusamus
+          voluptatem in iusto amet, architecto minus pariatur odit error illo
+          sunt magnam!
+        </p>
+        <button type="button" class="btn">Add to cart</button>
+        <button type="button" class="btn1">Buy now</button>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="box">
+        <h1 class="he">Home</h1>
+        <a href="#"> Address</a>
+        <a href="#">Contact</a>
+        <a href="#">Message</a>
+      </div>
+      <div class="box">
+        <h1 class="he">Contact</h1>
+        <a href="#">Location</a>
+        <a href="#">Online service</a>
+        <a href="#">More</a>
+      </div>
+      <div class="box">
+        <h1 class="he">Services</h1>
+        <a href="#">Disclamer</a>
+        <a href="#">About us</a>
+        <a href="#">Contact</a>
+      </div>
+  </div>
+    </div>
+  </body>
+</html>
